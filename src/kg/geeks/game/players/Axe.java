@@ -11,7 +11,7 @@ public class Axe extends Hero {
     public void applySuperPower(Boss boss, Hero[] heroes) {
         int chanceBrokeDefence = RPG_Game.random.nextInt(10);
         if (getHealth() > 0 && chanceBrokeDefence == 7) {
-        boss.setDefence(boss.getDefence());
+        boss.setDefence(SuperAbility.NO_PROTECTION);
         System.out.println(chanceBrokeDefence);}
 
 
